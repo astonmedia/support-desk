@@ -1,0 +1,24 @@
+{
+  "name": "support-desk",
+  "version": "1.0.0",
+  "description": "Support ticket app",
+  "main": "server.js",
+  "repository": "https://github.com/astonmedia/support-desk.git",
+  "author": "Ricky Aston <astonmedia@hotmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
