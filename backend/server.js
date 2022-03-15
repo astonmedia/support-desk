@@ -5,6 +5,7 @@ const connectDB = require("./config/db")
 const colors = require("colors")
 const PORT = process.env.PORT || 8000
 const userRoutes = require("./routes/userRoutes")
+const cors = require("cors")
 
 // Connect to Database
 connectDB()
@@ -12,6 +13,7 @@ const app = express()
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
+app.use(cors())
 
 app.use("/api/users", userRoutes)
 
